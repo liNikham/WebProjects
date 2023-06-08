@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+  <div class=" max-w-md mx-auto mt-8 flex items-center justify-center py-16 bg-white shadow-2xl shadow-gray-400">
+    
+  <form action="/compose" method="POST">
+    
+  <div class="flex flex-col space-y-4">
+    <h1 class="text-2xl   text-center text-gray-800">Compose</h1>
+    <p class="text-xl">Title</p>
+    <input class="w-full p-2 border border-gray-500" type="text" name="postTitle">
+    <p class="text-xl">Post</p>
+    <textarea name="postBody" class="w-full p-4 border mb-4 border-gray-500" cols="30" rows="5"></textarea>
+    <button class="w-full  md:w-auto flex justify-center  items-center p-2  font-bold text-white rounded-md drop-shadow-sm px-9 bg-cyan-700 shadow-cyan-100 hover: bg-opacity-90 hover:shadow-lg border transition hover:-translate-y-0.5 duration-150">Publish</button>
+  </div>
+  </form>
+  </div>
+  <%- include('partials/footer') %>
