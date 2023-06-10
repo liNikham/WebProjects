@@ -1,5 +1,13 @@
 <%- include('partials/header') %>
 
+<div class="max-w-md mx-auto mt-8 flex items-center justify-center py-16 bg-white shadow-2xl shadow-gray-400">
+  <form action="/compose" method="GET">
+    <button class="bg-cyan-700 hover:bg-opacity-90 hover:shadow-lg text-white font-bold py-2 px-4 rounded">
+      Compose
+    </button>
+  </form>
+</div>
+
   <div class="max-w-4xl mx-auto px-8 py-2  "><p class="text-xl text-center font-bold text-gray-800 mt-4"><%= homestartingcontent %></p>
     <% for(var i=0; i<posts.length; i++) { %>
       <p class="text-xl font-semibold text-gray-800 mt-5"> <%= posts[i].postTitle %></p>
